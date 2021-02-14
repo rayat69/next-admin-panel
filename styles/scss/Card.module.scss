@@ -1,0 +1,14 @@
+$textColor: #fff;
+
+$darkContainer: #121212;
+$borderContainer: #272727;
+
+.container {
+  min-width: 300px;
+  width: 28em;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: $darkContainer;
+  border: 1px solid $borderContainer;
+  color: $textColor;
+}

@@ -1,0 +1,12 @@
+$errTxt: #e35f5f;
+
+.errornote {
+  padding: 0.5rem;
+  border: 2px solid $errTxt;
+  border-radius: 4px;
+
+  p {
+    margin: 0;
+    color: $errTxt;
+  }
+}

@@ -3,13 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "db": "show databases",
+    "user": "node scripts/newuser.js",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start && next export",
+    "serve": "denon run --allow-net --allow-read ./backend/server.ts"
   },
   "dependencies": {
+    "axios": "^0.21.1",
+    "mysql": "^2.18.1",
     "next": "10.0.6",
+    "next-cookie": "^2.6.0",
+    "nodemailer": "^6.4.18",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-cookie": "^4.0.3",
+    "react-dom": "17.0.1",
+    "sqlite": "^4.0.19",
+    "sqlite3": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/mysql": "^2.15.17",
+    "@types/node": "^14.14.27",
+    "@types/react": "^17.0.2",
+    "esm": "^3.2.25",
+    "sass": "^1.32.7",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.5"
   }
 }
